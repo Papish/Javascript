@@ -1,0 +1,16 @@
+{
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "Javascript practice",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Papish/interview.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Papish/interview/issues"
+  },
+  "homepage": "https://github.com/Papish/interview#readme"
+}
