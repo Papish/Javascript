@@ -1,5 +1,11 @@
-import { test, expect } from "vitest";
+import { test } from "vitest";
+import { mount } from "@vue/test-utils";
+import HomeView from "../HomeView.vue";
 
-test("Test", () => {
-  expect(1).toBe(1);
+test("Test", async () => {
+  console.log(123);
+  const wrapper = mount(HomeView);
+  const testComponent = wrapper.findComponent({ name: "TestComponent" });
+  await testComponent.trigger("test");
+  console.log(testComponent.props());
 });
