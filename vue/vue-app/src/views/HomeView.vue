@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from "vue";
 import VButton from "@/components/design/atoms/VButton/VButton.vue";
 import VSelect from "@/components/design/atoms/VSelect/VSelect.vue";
 
@@ -16,15 +17,18 @@ const options = [
     value: "pa",
   },
 ];
+
+const form = ref({
+  country: "",
+});
 </script>
 
 <template>
-  <div>
+  <form>
     <VButton id="button" @clicked="fn">Click</VButton>
-  </div>
-  <div>
-    <VSelect :options="options" />
-  </div>
+    <br />
+    <VSelect label="Country" v-model="form.country" :options="options" />
+  </form>
 </template>
 
 <style></style>
