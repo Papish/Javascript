@@ -1,14 +1,29 @@
 <script setup lang="ts">
-import TestComponent from "@/components/TestComponent.vue";
+import VButton from "@/components/design/atoms/VButton/VButton.vue";
+import VSelect from "@/components/design/atoms/VSelect/VSelect.vue";
 
-const updated = () => {
-  console.log("called");
+const fn = () => {
+  console.log("--- File: HomeView.vue --- line no: 5: ", 123);
 };
+
+const options = [
+  {
+    label: "Asia",
+    value: "as",
+  },
+  {
+    label: "Pacific",
+    value: "pa",
+  },
+];
 </script>
 
 <template>
   <div>
-    <TestComponent @changed="updated" />
+    <VButton id="button" @clicked="fn">Click</VButton>
+  </div>
+  <div>
+    <VSelect :options="options" />
   </div>
 </template>
 
