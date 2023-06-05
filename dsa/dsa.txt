@@ -1,6 +1,0 @@
-Time complexity
-1. Constant: O(1)
-    Doesn't vary with input size and is same for any size of input
-
-2. Linear: O(n)
-    Time execution is propotional to input size
