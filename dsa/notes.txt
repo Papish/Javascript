@@ -1,1 +1,8 @@
 # Javascript
+
+## Array
+An array is a data structure that can hold a collection of values
+Array can contain mix data types, can store boolean, string, numbers or even objects
+Array are resizeable, no need to decalre size of array before creating it
+Indexing start from 0 and order is mainted
+Array are iterable, can be used with for loop
