@@ -49,17 +49,3 @@ class SingleLinkedList {
     this.length--;
   }
 }
-
-const sll = new SingleLinkedList();
-sll.push(1);
-sll.push(2);
-sll.push(1);
-sll.push(1);
-
-// time complexity = O(n)
-//
-function isPalindrome(list) {
-  //
-}
-
-console.log(isPalindrome(sll.head));
